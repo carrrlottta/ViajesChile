@@ -14,7 +14,7 @@ Landing page desarrollada para la prueba **Viajes Chile**.
 ## Estructura
 
 ```txt
-viajes-chile/
+ViajesChile/
 ├── assets/
 │   ├── css/style.css
 │   ├── img/
