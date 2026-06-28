@@ -1,0 +1,205 @@
+/*
+  Proyecto: Viajes Chile
+  Recursos documentados: Bootstrap 5.3.3, Font Awesome 6.5.2, Google Font Raleway.
+*/
+
+:root {
+  --turquesa: #17c4dc;
+  --negro: #000;
+  --blanco: #fff;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 70px;
+}
+
+body {
+  margin: 0;
+  background-color: var(--negro);
+  color: var(--blanco);
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.navbar {
+  background-color: rgba(18, 190, 205, 0.88);
+  transition: background-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.navbar.scrolled {
+  background-color: rgba(0, 0, 0, 0.92);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+}
+
+.brand-logo {
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+}
+
+.navbar-brand {
+  font-size: 1.35rem;
+  font-weight: 500;
+}
+
+.nav-link {
+  font-size: 0.95rem;
+}
+
+.hero-img {
+  height: 690px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 9%;
+}
+
+.section-block {
+  padding-top: 3.4rem;
+}
+
+.section-title {
+  color: var(--blanco);
+  font-size: 1.15rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.section-line {
+  border: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+  opacity: 1;
+  margin: 0 0 1.5rem;
+}
+
+.icon-strip {
+  background-color: var(--turquesa);
+  color: var(--blanco);
+  text-align: center;
+  font-size: 1.35rem;
+  line-height: 1;
+  padding: 0.42rem 0;
+  margin-bottom: 0.7rem;
+}
+
+.icon-strip i {
+  display: inline-block;
+  min-width: 1.5rem;
+}
+
+#quienes-somos p {
+  line-height: 1.55;
+  margin-bottom: 0.7rem;
+}
+
+.travel-card {
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  border-radius: 0.25rem;
+  background-color: var(--turquesa);
+  color: var(--blanco);
+}
+
+.travel-card .card-img-top {
+  height: 154px;
+  object-fit: cover;
+}
+
+.travel-card .card-body {
+  padding: 1rem;
+}
+
+.travel-card .card-title {
+  font-size: 1.12rem;
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+.travel-card .card-text {
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
+.contact-form .form-label {
+  margin-bottom: 0.45rem;
+}
+
+.contact-form .form-control {
+  border-radius: 0.25rem;
+}
+
+.btn-info {
+  background-color: var(--turquesa);
+  border-color: var(--turquesa);
+}
+
+.footer {
+  background-color: var(--turquesa);
+}
+
+.footer-title {
+  font-size: 1.7rem;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
+
+.social-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  color: var(--blanco);
+  font-size: 1.75rem;
+  line-height: 1;
+  text-decoration: none;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.social-links i {
+  display: block;
+}
+
+.social-links a:hover {
+  opacity: 0.8;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 767.98px) {
+  .hero-img {
+    height: 460px;
+  }
+
+  .section-block {
+    padding-top: 2.5rem;
+  }
+
+  .navbar {
+    background-color: rgba(0, 0, 0, 0.86);
+  }
+
+  .footer-title {
+    font-size: 1.35rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .hero-img {
+    height: 360px;
+  }
+
+  .brand-logo {
+    width: 28px;
+    height: 28px;
+  }
+
+  .navbar-brand {
+    font-size: 1.1rem;
+  }
+}
